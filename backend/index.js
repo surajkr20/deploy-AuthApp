@@ -6,9 +6,14 @@ const PORT = process.env.PORT || 3000;
 const db = require('./Models/db')
 
 const cors = require('cors');
-app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true })); // corrected line
+
+const corsOptions = {
+    origin: 'https://deploy-auth-app-frontend.vercel.app'
+};
+
+app.use(cors(corsOptions));
 
 const AuthRouter = require('./Routes/AuthRouter');
 const ProductRouter = require('./Routes/ProductRouter');
