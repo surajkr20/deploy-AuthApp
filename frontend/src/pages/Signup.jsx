@@ -28,7 +28,7 @@ const Signup = () => {
         return handleError('Name, Email and Password are required')
     }
     try {
-        const url = 'deploy-auth-app-backend.vercel.app/auth/signup'
+        const url = 'https://deploy-auth-app-backend.vercel.app/auth/signup'
         const response = await fetch(url,{
           method: 'POST', // use uppercase
           headers: {
