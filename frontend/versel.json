@@ -1,0 +1,15 @@
+{
+    "rewrites": [
+      {
+        "source": "/api/(.*)",
+        "destination": "/backend/$1"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/index.html" 
+      }
+    ]
+}
+  

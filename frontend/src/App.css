@@ -1,0 +1,12 @@
+
+.login-container form label{
+  margin-left: 4px;
+  color: blue;
+  font-style: oblique;
+}
+
+.signup-container form label{
+  font-style: oblique;
+  color: blue;
+  margin-left: 4px;
+}
